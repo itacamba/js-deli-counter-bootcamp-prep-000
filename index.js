@@ -29,7 +29,7 @@ function nowServing(katzDeliLine){
 // 2nd task. to return the string contained in the index. ${katzDeliLine[i]} and display it in order,
 // 3rd task, I learned that for me in order to access a variable from outside a for loop, i had first,
 // to create an empty array so I could push all the elements in, and be able to access them later.
-// 4th
+// 4th the join() function converts the parameter we give to it, into a string and passes it to the array elements.
 function currentLine(katzDeliLine){
   if (!katzDeliLine.length){
     return `The line is currently empty.`;
@@ -39,5 +39,5 @@ function currentLine(katzDeliLine){
 	for (let i = 0 ; i < katzDeliLine.length ; i++){
     lineAsAString.push(`${i+1}. ${katzDeliLine[i]}`)
   }
-  return `The line is currently: ${lineAsAString.join(`, `)}`;
+  return `The line is currently: ${lineAsAString.join(', ')}`;
 }
